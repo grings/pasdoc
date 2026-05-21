@@ -1,0 +1,1 @@
+{$define GOT_SAMPLE_INCLUDE_2}

@@ -890,6 +890,9 @@ begin
   if ExtractFileNameNoExt(N) = '*' then
     N := ExtractFilePath(N) + ExtractFileNameNoExt(FTokenizers[FCurrentTokenizer].StreamName) +
       ExtractFileExt(N);
+  (*Replace \ with path delimiter, to make {$I ..\sample_include.inc} work
+    even on Unix. See tests/testcases/test_subdir/ok_include_from_parent_dir.pas *)
+  N := SCharsReplace(N, ['/', '\'], PathDelim);
 
   NLowerCase := LowerCase(N);
   { If NLowerCase = N, avoid calling FileExists twice (as FileExists

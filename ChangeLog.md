@@ -1,6 +1,8 @@
 # List of changes
 
-<!-- ## Upcoming Next Release -->
+## Upcoming Next Release
+
+* Fix including file with relative path with a backslash on non-Windows. For example, using `{$I ..\sample_include.inc}` (to include `sample_include.inc` in a parent directory) was broken on non-Windows (like Linux), now it's OK. (Michalis)
 
 ## Version 1.0.4 (2026-04-04)
 
