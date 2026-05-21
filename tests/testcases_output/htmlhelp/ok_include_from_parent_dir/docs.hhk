@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+</head><body>
+<ul>
+<li><object type="text/sitemap">
+<param name="Name" value="TestSampleInclude">
+<param name="Local" value="ok_include_from_parent_dir.html#TestSampleInclude">
+</object>
+<li><object type="text/sitemap">
+<param name="Name" value="TestSampleInclude2">
+<param name="Local" value="ok_include_from_parent_dir.html#TestSampleInclude2">
+</object>
+</ul>
+</body></html>

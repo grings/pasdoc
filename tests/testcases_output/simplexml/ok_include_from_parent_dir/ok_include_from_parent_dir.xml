@@ -1,0 +1,9 @@
+<unit name="ok_include_from_parent_dir">
+  <description><abstract>Test using $I to include a file from the parent directory.</abstract><detailed> E.g. mORMot uses this, to include mormot.defines.inc, all along sources.</detailed></description>
+  <constant name="TestSampleInclude" declaration="TestSampleInclude =  'OK' ;">
+    <description><abstract>Include file using Windows backslashes, to make test harder.</abstract><detailed> Should work cross-platform, FPC allows this even on Linux too.</detailed></description>
+  </constant>
+  <constant name="TestSampleInclude2" declaration="TestSampleInclude2 =  'OK' ;">
+    <description><abstract>Include with (Unix forward) slashes.</abstract><detailed> This is easier test, since / work also on Windos as path separator out-of-the-box.</detailed></description>
+  </constant>
+</unit>
